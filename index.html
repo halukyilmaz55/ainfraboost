@@ -11,38 +11,45 @@
     }
 
     body {
-      /* Logo üzerine daha koyu bir siyah maske */
-      background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('ainfraboost.png') no-repeat center center fixed;
-      background-size: cover;
+      background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), 
+                  url('ainfraboost.png') no-repeat center center fixed;
+      background-size: 45%; /* Logo küçültüldü */
       font-family: 'Segoe UI', sans-serif;
       color: white;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
-      padding-top: 7vh; /* Daha da yukarı */
+      padding-top: 7vh;
       text-align: center;
     }
 
     h1 {
       font-size: 3rem;
       margin-bottom: 0.5rem;
-      background-color: rgba(0, 0, 0, 0.7); /* daha opak arka plan */
+      background-color: rgba(0, 0, 0, 0.7);
       padding: 0.6rem 1.6rem;
       border-radius: 12px;
     }
 
     p {
       font-size: 1.2rem;
-      background-color: rgba(0, 0, 0, 0.6); /* açıklama da net olsun */
+      background-color: rgba(0, 0, 0, 0.6);
       padding: 0.4rem 1.2rem;
       border-radius: 8px;
       margin-top: 0.5rem;
+    }
+
+    .partnership {
+      font-size: 0.9rem;
+      margin-top: 2rem;
+      opacity: 0.7;
     }
   </style>
 </head>
 <body>
   <h1>🚀 AInfraboost is launching soon!</h1>
   <p>Stay tuned for something awesome.</p>
+  <div class="partnership">in collaboration with <strong>N.A.I.R.O Tech</strong></div>
 </body>
 </html>
