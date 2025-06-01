@@ -1,0 +1,15 @@
+---
+const { title } = Astro.props;
+---
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{title}</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+  <body>
+    <header><h2>Ainfraboost</h2></header>
+    <main><slot /></main>
+    <footer>© 2025 Ainfraboost</footer>
+  </body>
+</html>

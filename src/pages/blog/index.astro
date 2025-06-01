@@ -1,0 +1,25 @@
+---
+import fs from 'fs';
+const postsDir = '../../../content/blog';
+const files = fs.readdirSync(new URL(postsDir, import.meta.url));
+const posts = files.map(file => {
+  const filePath = new URL(`${postsDir}/${file}`, import.meta.url);
+  const content = fs.readFileSync(filePath, 'utf-8');
+  const title = content.match(/title: (.+)/)[1];
+  const date = content.match(/date: (.+)/)[1];
+  const category = content.match(/category: (.+)/)?.[1] || 'General';
+  const summary = content.match(/summary: (.+)/)?.[1] || '';
+  const slug = file.replace('.md', '');
+  return { title, date, slug, category, summary };
+});
+---
+
+<h1>Ainfraboost Blog</h1>
+<ul>
+  {posts.map(post => (
+    <li style="margin-bottom:1.5rem">
+      <a href={`/blog/${post.slug}`}><strong>{post.title}</strong></a> — <em>{post.date}</em><br/>
+      <small><strong>{post.category}</strong> | {post.summary}</small>
+    </li>
+  ))}
+</ul>
