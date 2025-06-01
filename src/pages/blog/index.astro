@@ -1,19 +1,7 @@
 ---
-const posts = await Astro.glob('../../../content/blog/*.md');
-
-const postList = posts.map(post => {
-  const { title, date, category = 'General', summary = '' } = post.frontmatter;
-  const slug = post.file.split('/').pop().replace('.md', '');
-  return { title, date, category, summary, slug };
-}).sort((a, b) => new Date(b.date) - new Date(a.date));
+import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
-<h1>Ainfraboost Blog</h1>
-<ul>
-  {postList.map(post => (
-    <li style="margin-bottom:1.5rem">
-      <a href={`/blog/${post.slug}`}><strong>{post.title}</strong></a> — <em>{post.date}</em><br/>
-      <small><strong>{post.category}</strong> | {post.summary}</small>
-    </li>
-  ))}
-</ul>
+<BaseLayout title="Blog">
+  <h1>Welcome to the blog</h1>
+</BaseLayout>
