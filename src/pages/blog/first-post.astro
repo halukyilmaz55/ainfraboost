@@ -1,16 +1,12 @@
 ---
 import BlogLayout from '../../layouts/BlogLayout.astro';
-import fs from 'fs';
 
-const filePath = new URL('../../content/blog/first-post.md', import.meta.url);
-const markdown = fs.readFileSync(filePath, 'utf-8');
-const title = markdown.match(/title: (.+)/)?.[1] || "Untitled";
-const date = markdown.match(/date: (.+)/)?.[1] || "Unknown";
-const category = markdown.match(/category: (.+)/)?.[1] || 'General';
-const content = markdown.split('---')[2];
+const post = await Astro.glob('../../content/blog/first-post.md');
+const { title, date, category } = post[0].frontmatter;
+const Content = post[0].default;
 ---
 
 <BlogLayout title={title} date={date}>
   <p><strong>Kategori:</strong> {category}</p>
-  <div innerHTML={content} />
+  <Content />
 </BlogLayout>
