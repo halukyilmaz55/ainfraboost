@@ -3,34 +3,42 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. I designed and crafted this based on [my personal blog](https://satnaing.dev/blog).
+AInfraBoost is a digital platform focused on Cloud, DevOps, and AI-powered innovation. Created in collaboration with **Nairo Tech**, our mission is to empower the tech community through high-quality content, tool reviews, and insightful conversations.
 
-This theme is aimed to be accessible out of the box. Light and dark mode are supported by
-default and additional color schemes can also be configured.
-
-This theme is self-documented \_ which means articles/posts in this theme can also be considered as documentations. So, see the documentation for more info.
+We aim to simplify complex infrastructure topics and deliver real-world solutions — all with the clarity and practicality modern tech teams need.
 
 <div>
-  <img src="/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
+  <img src="/dev.svg" class="sm:w-1/2 mx-auto" alt="cloud devops illustration">
 </div>
 
 ## Tech Stack
 
-This theme is written in vanilla JavaScript (+ TypeScript for type checking) and a little bit of ReactJS for some interactions. TailwindCSS is used for styling; and Markdown is used for blog contents.
+This platform is built with **Astro**, using **TypeScript** for structure, **TailwindCSS** for styling, and **Markdown** for all blog content. Performance and simplicity are key principles in our setup.
+
+## What You’ll Find
+
+Here’s what Ainfraboost offers:
+
+- Cloud-native tutorials & deep-dives  
+- DevOps pipelines & CI/CD automation  
+- AI-driven observability and monitoring strategies  
+- Infrastructure as Code (IaC) best practices  
+- Real-life implementations with GitOps, ArgoCD, Terraform, and more  
+- Tool reviews and thought leadership articles  
+- Tech talks and vlogs via our [YouTube Channel](https://www.youtube.com/@AInfraBoostTech)
 
 ## Features
 
-Here are certain features of this site.
+- Fully responsive & accessible design  
+- SEO-optimized content  
+- Light & dark mode toggle  
+- Instant fuzzy search  
+- Fast build performance  
+- Draft & scheduled posts  
+- Clean pagination  
+- Auto-generated sitemap & RSS feed  
+- Developer-friendly customization
 
-- fully responsive and accessible
-- SEO-friendly
-- light & dark mode
-- fuzzy search
-- super fast performance
-- draft posts
-- pagination
-- sitemap & rss feed
-- highly customizable
+If you enjoy our content or want to collaborate, feel free to connect via [LinkedIn](https://www.linkedin.com/in/haluk-y%C4%B1lmaz-9b30a54a/) or send us an [email](mailto:halukkyilmaz@gmail.com).
 
-If you like this theme, you can star/contribute to the [repo](https://github.com/satnaing/astro-paper).  
-Or you can even give any feedback via my [email](mailto:contact@satnaing.dev).
+Stay tuned, stay inspired — **AInfraBoost** is just getting started 🚀
