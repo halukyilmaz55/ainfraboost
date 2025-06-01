@@ -8,7 +8,7 @@ AInfraBoost is a digital platform focused on Cloud, DevOps, and AI-powered innov
 We aim to simplify complex infrastructure topics and deliver real-world solutions — all with the clarity and practicality modern tech teams need.
 
 <div>
-  <img src="/dev.svg" class="sm:w-1/2 mx-auto" alt="cloud devops illustration">
+  <img src="/team-anime.png" class="sm:w-1/2 mx-auto my-8 rounded-xl shadow-lg" alt="AInfraBoost team anime illustration" />
 </div>
 
 ## Tech Stack
