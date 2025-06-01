@@ -39,11 +39,11 @@ const isActive = (path: string) => {
       id="top-nav-wrap"
       class="relative flex w-full items-baseline justify-between bg-background p-4 sm:items-center sm:py-6"
     >
-      <a
-        href="/"
-        class="absolute py-1 text-2xl leading-7 font-semibold whitespace-nowrap sm:static"
-      >
-        {SITE.title}
+      <a href="/" class="flex items-center gap-2">
+        <img src="/ainfraboost.png" alt="Ainfraboost Logo" class="h-8 w-auto rounded" />
+        <span class="text-2xl leading-7 font-semibold whitespace-nowrap sm:static">
+          {SITE.title}
+        </span>
       </a>
       <nav
         id="nav-menu"
