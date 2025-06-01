@@ -1,6 +1,6 @@
 ---
 title: Ainfraboost Başlıyor!
-date: 2025-05-31
+date: "2025-05-31"
 category: Genel
 summary: Cloud, DevOps ve AI odaklı içerik yolculuğumuza başlıyoruz!
 ---

@@ -1,6 +1,5 @@
 {
   "name": "ainfraboost",
-  "type": "module",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -8,6 +7,7 @@
   },
   "dependencies": {
     "@astrojs/cloudflare": "^12.5.3",
-    "astro": "^5.8.1"
+    "astro": "^5.8.1",
+    "tslib": "^2.8.1"
   }
 }

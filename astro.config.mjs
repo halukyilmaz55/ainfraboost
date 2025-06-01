@@ -2,7 +2,9 @@ import { defineConfig } from 'astro/config';
 import cloudflare from '@astrojs/cloudflare';
 
 export default defineConfig({
-  site: 'https://ainfraboost.com',
-  output: 'server', // SSR için gerekli
+  output: 'server',
   adapter: cloudflare(),
+  content: {
+    entry: './src/content/config.ts'
+  }
 });
