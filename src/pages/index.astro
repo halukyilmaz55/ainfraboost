@@ -1,16 +1,9 @@
 ---
-import "../public/global.css";
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Ainfraboost</title>
-    <link rel="stylesheet" href="/global.css" />
-  </head>
-  <body>
-    <img src="/ainfraboost.png" alt="Ainfraboost Logo" class="logo" />
-    <h1>🚀 Ainfraboost is launching soon!</h1>
-    <p>Stay tuned for AI + Cloud + DevOps insights, powered by Nairo Tech.</p>
-  </body>
-</html>
+<BaseLayout title="Ainfraboost">
+  <img src="/ainfraboost.png" alt="Ainfraboost Logo" class="logo" />
+  <h1>🚀 Ainfraboost is launching soon!</h1>
+  <p>Stay tuned for AI + Cloud + DevOps insights, powered by Nairo Tech.</p>
+</BaseLayout>
