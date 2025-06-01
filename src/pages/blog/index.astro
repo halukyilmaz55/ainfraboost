@@ -1,7 +1,26 @@
 ---
+import fs from 'fs';
+import path from 'path';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const blogDir = './src/content/blog';
+const files = fs.readdirSync(blogDir);
+const posts = files.map((file) => {
+  const slug = file.replace('.md', '');
+  const content = fs.readFileSync(path.join(blogDir, file), 'utf-8');
+  const titleMatch = content.match(/title:\s*(.*)/);
+  return {
+    slug,
+    title: titleMatch ? titleMatch[1] : slug
+  };
+});
 ---
 
 <BaseLayout title="Blog">
-  <h1>Welcome to the blog</h1>
+  <h1>Blog</h1>
+  <ul>
+    {posts.map(post => (
+      <li><a href={`/blog/${post.slug}`}>{post.title}</a></li>
+    ))}
+  </ul>
 </BaseLayout>

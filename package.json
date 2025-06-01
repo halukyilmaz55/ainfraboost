@@ -7,6 +7,8 @@
     "preview": "astro preview"
   },
   "dependencies": {
-    "astro": "^4.6.2"
+    "astro": "^4.6.2",
+    "gray-matter": "^4.0.3",
+    "marked": "^15.0.12"
   }
 }
