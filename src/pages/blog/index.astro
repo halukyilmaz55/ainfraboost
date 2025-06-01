@@ -1,17 +1,22 @@
 ---
 import fs from 'fs';
-const postsDir = '../../../content/blog';
-const files = fs.readdirSync(new URL(postsDir, import.meta.url));
-const posts = files.map(file => {
-  const filePath = new URL(`${postsDir}/${file}`, import.meta.url);
-  const content = fs.readFileSync(filePath, 'utf-8');
-  const title = content.match(/title: (.+)/)[1];
-  const date = content.match(/date: (.+)/)[1];
-  const category = content.match(/category: (.+)/)?.[1] || 'General';
-  const summary = content.match(/summary: (.+)/)?.[1] || '';
-  const slug = file.replace('.md', '');
-  return { title, date, slug, category, summary };
-});
+const postsDir = '../../content/blog';
+const postsPath = new URL(postsDir, import.meta.url);
+
+let posts = [];
+if (fs.existsSync(postsPath)) {
+  const files = fs.readdirSync(postsPath);
+  posts = files.map(file => {
+    const filePath = new URL(`${postsDir}/${file}`, import.meta.url);
+    const content = fs.readFileSync(filePath, 'utf-8');
+    const title = content.match(/title: (.+)/)?.[1] || "Untitled";
+    const date = content.match(/date: (.+)/)?.[1] || "Unknown";
+    const category = content.match(/category: (.+)/)?.[1] || 'General';
+    const summary = content.match(/summary: (.+)/)?.[1] || '';
+    const slug = file.replace('.md', '');
+    return { title, date, slug, category, summary };
+  });
+}
 ---
 
 <h1>Ainfraboost Blog</h1>
