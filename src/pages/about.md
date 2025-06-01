@@ -13,7 +13,8 @@ We aim to simplify complex infrastructure topics and deliver real-world solution
 
 ## Tech Stack
 
-This platform is built with **Astro**, using **TypeScript** for structure, **TailwindCSS** for styling, and **Markdown** for all blog content. Performance and simplicity are key principles in our setup.
+This platform is engineered by **AInfraBoost** to deliver a high-performance digital experience for cloud, DevOps, and AI enthusiasts. Built with the modern web stack — **Astro** for fast rendering, **TypeScript** for safety and scalability, and **TailwindCSS** for sleek, responsive design — our system is both developer-first and content-friendly.  
+We use **Markdown** to power content workflows and maintain clarity, performance, and full control across the stack.
 
 ## What You’ll Find
 
@@ -27,17 +28,17 @@ Here’s what Ainfraboost offers:
 - Tool reviews and thought leadership articles  
 - Tech talks and vlogs via our [YouTube Channel](https://www.youtube.com/@AInfraBoostTech)
 
-## Features
+## Platform Highlights
 
-- Fully responsive & accessible design  
-- SEO-optimized content  
-- Light & dark mode toggle  
-- Instant fuzzy search  
-- Fast build performance  
-- Draft & scheduled posts  
-- Clean pagination  
-- Auto-generated sitemap & RSS feed  
-- Developer-friendly customization
+- ⚡ Lightning-fast page loads powered by Astro SSG  
+- 🔍 AI-assisted search & discoverability  
+- 🌓 Dark & light mode support with smart toggles  
+- 🧠 Structured content using Markdown & TypeScript  
+- 🔁 GitHub-based publishing with CI workflows  
+- 📈 SEO-optimized architecture with OpenGraph & RSS  
+- 🛠️ Fully responsive across devices  
+- 🧩 Easily extendable via components & integrations  
+- 🎥 Embedded video support (YouTube, demo showcases)
 
 If you enjoy our content or want to collaborate, feel free to connect via [LinkedIn](https://www.linkedin.com/in/haluk-y%C4%B1lmaz-9b30a54a/) or send us an [email](mailto:halukkyilmaz@gmail.com).
 
