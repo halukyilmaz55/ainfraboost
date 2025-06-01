@@ -174,7 +174,7 @@ export const SOCIALS = [
     name: "YouTube",
     href: "https://www.youtube.com/@AInfraboostTech",
     linkTitle: `${SITE.title} on YouTube`,
-    icon: IconMail,
+    icon: IconYouTube,
   }
 ] as const;
 ```
