@@ -15,6 +15,16 @@ const { title } = Astro.props;
     <link rel="icon" type="image/png" href="/ainfraboost.png" />
   </head>
   <body>
+    <header class="navbar">
+      <img src="/ainfraboost.png" alt="Logo" class="logo-small" />
+      <nav>
+        <a href="/">Ana Sayfa</a>
+        <a href="/about">Hakkımızda</a>
+        <a href="/blog">Blog</a>
+        <a href="https://youtube.com/@ainfraboost" target="_blank">YouTube</a>
+      </nav>
+    </header>
+
     <main>
       <slot />
     </main>
