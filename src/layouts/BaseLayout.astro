@@ -5,11 +5,18 @@ export interface Props {
 const { title } = Astro.props;
 ---
 
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AI + Cloud + DevOps insights by Ainfraboost & Nairo Tech" />
     <title>{title}</title>
+    <link rel="stylesheet" href="/global.css" />
+    <link rel="icon" type="image/png" href="/ainfraboost.png" />
   </head>
   <body>
-    <slot />
+    <main>
+      <slot />
+    </main>
   </body>
 </html>
