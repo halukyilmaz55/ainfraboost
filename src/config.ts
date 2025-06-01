@@ -21,7 +21,6 @@ export const SITE = {
   timezone: "Europe/Istanbul",
 } as const;
 
-
 // export const SITE = {
 //   website: "https://astro-paper.pages.dev/", // replace this with your deployed domain
 //   author: "Sat Naing",
