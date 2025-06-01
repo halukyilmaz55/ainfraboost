@@ -170,6 +170,12 @@ export const SOCIALS = [
     linkTitle: `Send an email to ${SITE.title}`,
     icon: IconMail,
   },
+  {
+    name: "YouTube",
+    href: "https://www.youtube.com/@AInfraboostTech",
+    linkTitle: `${SITE.title} on YouTube`,
+    icon: IconMail,
+  }
 ] as const;
 ```
 
