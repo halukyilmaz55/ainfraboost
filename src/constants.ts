@@ -6,7 +6,7 @@ import IconWhatsapp from "@/assets/icons/IconWhatsapp.svg";
 import IconFacebook from "@/assets/icons/IconFacebook.svg";
 import IconTelegram from "@/assets/icons/IconTelegram.svg";
 import IconPinterest from "@/assets/icons/IconPinterest.svg";
-import IconYouTube from "@/assets/icons/IconYouTube.svg";
+import IconYouTube from "@assets/icons/IconYouTube.svg";
 import { SITE } from "@/config";
 
 export const SOCIALS = [
@@ -33,6 +33,12 @@ export const SOCIALS = [
     href: "mailto:yourmail@gmail.com",
     linkTitle: `Send an email to ${SITE.title}`,
     icon: IconMail,
+  },
+  {
+    name: "YouTube",
+    href: "https://www.youtube.com/@AInfraBoostTech",
+    linkTitle: `${SITE.title} on YouTube`,
+    icon: IconYouTube,
   },
 ] as const;
 
@@ -72,5 +78,11 @@ export const SHARE_LINKS = [
     href: "mailto:?subject=See%20this%20post&body=",
     linkTitle: `Share this post via email`,
     icon: IconMail,
+  },
+  {
+    name: "YouTube",
+    href: "https://www.youtube.com/@AInfraBoostTech",
+    linkTitle: `${SITE.title} on YouTube`,
+    icon: IconYouTube,
   },
 ] as const;
